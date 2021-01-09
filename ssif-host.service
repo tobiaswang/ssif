@@ -1,0 +1,13 @@
+[Unit]
+Description=SSIF HOST daemon
+After=xyz.openbmc_project.EntityManager.service
+
+[Service]
+Type=dbus
+BusName=xyz.openbmc_project.ssif-host
+ExecStart=/usr/bin/ssif-host
+Restart=always
+
+
+[Install]
+WantedBy=multi-user.target

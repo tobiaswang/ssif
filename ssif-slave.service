@@ -1,0 +1,13 @@
+[Unit]
+Description=SSIF SLAVE daemon
+After=xyz.openbmc_project.EntityManager.service
+
+[Service]
+#Type=dbus
+#BusName=xyz.openbmc_project.SSIF.Slave
+ExecStart=/usr/bin/ssif-slave
+Restart=always
+
+
+[Install]
+WantedBy=multi-user.target

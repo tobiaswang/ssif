@@ -1,0 +1,11 @@
+{    
+	"ssif_slave":{
+		"bus": 0,
+		"address": 44
+	},
+	"ssif_host":{
+		"bus": 13,
+		"address": 22
+	}
+		
+}
